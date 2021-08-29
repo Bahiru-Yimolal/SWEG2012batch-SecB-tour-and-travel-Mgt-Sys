@@ -1,3 +1,5 @@
+//option 1
+
 #include <iostream>
 #include<string.h>
 #include<stdlib.h>
@@ -693,4 +695,431 @@ float  ticketcostB(calTOT calc)
         return total;
 }
 
+//option 2
+//second option
+#include
+#include<string.h>
+#include<stdlib.h>
 
+using namespace std;
+
+void bahirDarFun();
+void gondarFun();
+void axumFun();
+void acceptinfo();
+struct dates{
+int dd,mm,yy;}date;
+
+struct TouristsInfo{
+
+    string full_name[20];
+    string email;
+    int phone_num;
+    dates trip_data;
+
+    
+    
+};
+int main()
+
+{
+
+returnmain:
+
+ cout<<"\n          ================= WELLCOME TO AASTU TOUR AND TRAVEL AGENCY ====================\n";
+ cout<<endl<<endl;
+ cout<<"                            AASTU tour and travel agency gives these tour services\n";
+ cout<<endl;
+ cout<<"           1. Reccomended tours : \n";
+ cout<<"           2. Festival tours : \n";
+ cout<<"           3. Tour packeges  : \n";
+ cout<<"           4. To exit : \n";
+ 
+ 
+ 
+ //to  enter the above choices use this variable
+ 
+ returnchoice :
+ 
+ int mainCHOICE;
+ 
+ cout<<"\n==== Please Enter Your choice from the above list ====\n";
+ 
+ cin>>mainCHOICE;
+ 
+ switch(mainCHOICE)
+        {
+            case 1:
+            	{      int ReccomendedtourCHOICE;
+            	
+            	retrunrecommended:
+                       cout<<"------------------------- Reccomended tours------------------------ \n";
+            	       cout<<"     1. Bahir Dar\n";
+                       cout<<"     2. Gondar\n";
+                       cout<<"     3. Axum\n";
+            	       cout<<"     4.To return to the main choice\n";
+            	       cout<<"     5.To exit"<<endl<<endl;
+            	       
+            	   cout<<"\n==== Please Enter Your choice from the above list ====\n";
+            	   
+            	   cin>> ReccomendedtourCHOICE;
+            	   
+            	  switch(ReccomendedtourCHOICE){
+            	      case 1:
+            	            bahirDarFun();break;
+
+            	      case 2:
+                              gondarFun();break;
+
+            	      case 3:
+                              axumFun();break;
+            	          
+            	      
+            	      case 4: goto returnmain; break;
+            	      
+            	      case 5: return 0; break;
+            	      
+            	      default:
+            
+                          cout<<"Incorrect INPUT please enter your choice correctly ";
+                           goto  retrunrecommended ;
+                           break;
+            	      
+            	      
+            	      
+            	     
+            	      
+            	    }
+            	    
+            	   
+            	}
+
+                     break;  
+           case 2:
+              {    int  returnFestivalCHOICE;
+              
+              returnfestival:
+                  cout<<"-----------------------------------Festival tours-------------------------------------\n";
+            	       cout<<"    1. Bahir Dar\n";
+                       cout<<"2. Gondar\n";
+                       cout<<"3. Axum\n";
+                       cout<<"4.To return to the main choice\n";
+                       cout<<"5. To Exit"<<endl<<endl;
+                       
+                       
+                        cout<<"\n==== Please Enter Your choice from the above list ====\n";
+            	   
+            	   cin>> returnFestivalCHOICE;
+            	   
+            	  switch(returnFestivalCHOICE){
+            	      case 1:  break;
+
+            	      case 2:  break;
+
+            	      case 3:  break;
+
+            	      case 4: goto returnmain; break;
+            	      
+            	      case 5: return 0; break;
+            	      
+            	      default:
+            
+            cout<<"Incorrect INPUT please enter your choice correctly ";
+            goto  returnfestival ;
+            break;
+
+            	      
+            	   }
+            	   
+                  
+              }
+            
+            
+            
+            break;
+           case 3:
+              {  int packegesCHOICE;
+              
+              returnpackages:
+                  
+                  cout<<"--------------------------------Tour packeges---------------------------------  \n";
+            	       cout<<"       1. Bahir Dar\n";
+                       cout<<"       2. Gondar\n";
+                       cout<<"       3. Axum\n";
+                       cout<<"       4.To return to the main choice\n";
+                       cout<<"       5. To Exit"<<endl<<endl;
+                       
+                       
+                        cout<<"\n==== Please Enter Your choice from the above list ====\n";
+            	   
+            	   cin>> packegesCHOICE;
+            	   
+            	  switch(packegesCHOICE){
+            	      case 1: break;
+
+            	      case 2: break;
+
+            	      case 3: break;
+
+            	      case 4: goto returnmain; break;
+            	      
+            	      case 5: return 0; break;
+            	      
+            	      default:
+            
+                            cout<<"Incorrect INPUT please enter your choice correctly ";
+                            goto  returnpackages ;
+                            break;
+
+            	      
+            	  }
+            	   
+              }
+                       
+
+            break;
+                       
+                       
+                
+            case 4:break;
+             
+            default:
+            
+            cout<<"Incorrect INPUT please enter your choice correctly ";
+            goto  returnchoice ;
+            break;
+            
+        }     
+return 0;
+}
+
+void bahirDarFun(){
+    
+    
+    
+    cout<<"                info about bahidar and about the tour                 "<<endl<<endl;
+    
+    
+    returnbahirdar:
+    cout<<"       1.To cheak tour avalibility   \n";
+    cout<<"       2.To return back \n";
+    cout<<"       3.To Exit"<<endl<<endl;
+    
+     cout<<"\n==== Please Enter Your choice from the above list ====\n";
+     
+     int bahirdarCHOICE;
+
+     cin>>bahirdarCHOICE;
+     
+     switch(bahirdarCHOICE){
+         
+         case 1:
+         
+            {
+                
+    returnbahirdar1:
+    
+   cout<<"\n********************SORRY DUE TO SOME REASONS THE TOUR IS NOT AVALIABEL********************\n\n";
+              
+    cout<<"         1.To return to recommended tours \n";
+    cout<<"         2.To Exit"<<endl<<endl;
+    
+     cout<<"\n==== Please Enter Your choice from the above list ====\n";
+     
+      int bahirdarCHOICE1;
+
+     cin>>bahirdarCHOICE1;
+     
+     
+         switch(bahirdarCHOICE1){
+             
+             
+             case 1:  break;
+             
+             case 2: exit(0); break;
+             
+            default:
+            
+            cout<<"Incorrect INPUT please enter your choice correctly ";
+            goto  returnbahirdar ;
+            break;
+            
+             
+             
+                }
+                
+                
+                
+            }
+            break;
+         case 2: 
+         
+         break;
+         case 3:exit(0);   break;
+         
+         default:
+            
+            cout<<"Incorrect INPUT please enter your choice correctly ";
+            goto  returnbahirdar ;
+            break;
+
+     }
+
+
+}
+
+
+
+void gondarFun(){
+    
+    cout<<"                info about gonder and about the tour                 "<<endl<<endl;
+    
+    
+    returngonder:
+    cout<<"       1.To cheak tour avalibility   \n";
+    cout<<"       2.To return back \n";
+    cout<<"       3.To Exit"<<endl<<endl;
+    
+     cout<<"\n==== Please Enter Your choice from the above list ====\n";
+     
+     int gonderCHOICE;
+
+     cin>>gonderCHOICE;
+     
+     switch(gonderCHOICE){
+         
+         case 1:
+         
+            {
+                
+    returnbahirdar1:
+    cout<<"\n********************yessssss the tour is avalibility********************\n\n";
+    
+    cout<<"         1.Tour reservation \n";       
+    cout<<"         3.To return to back \n";
+    cout<<"         3.To Exit"<<endl<<endl;
+    
+     cout<<"\n==== Please Enter Your choice from the above list ====\n";
+     
+      int bahirdarCHOICE1;
+
+     cin>>bahirdarCHOICE1;
+     
+     
+         switch(bahirdarCHOICE1){
+             case 1:{ acceptinfo();
+                 
+                 
+
+ int  trans_cost;       
+                    
+                        cout<<"    \n transportation \n";
+ cout<<endl;
+ cout<<"           1.plain  indivdual cost 1500 \n";
+ cout<<"           2.car   indivdual cost 1000 \n";
+ 
+cout<<"\n==== Please Enter Your choice from the above list ====\n";
+
+cin>>trans_cost;
+
+int bed_cost;
+
+
+ cout<<"    \n bed room \n";
+ cout<<endl;
+ cout<<"           1.single bedroom cost 1500 \n";
+ cout<<"           2.double   bedroom cost 1000 \n";
+ cout<<"           3.VIP room cost 2000 ";
+ cout<<"           4:hall cost 3000";
+cout<<"\n==== Please Enter Your choice from the above list ====\n";
+
+
+cin>>bed_cost;
+  
+                     
+                     
+                     
+                 }
+                 
+                 
+             
+             
+             case 2: goto returngonder; break;
+             
+             case 3: exit(0); break;
+             
+            default:
+            
+            cout<<"Incorrect INPUT please enter your choice correctly ";
+            goto  returngonder ;
+            break;
+            
+             
+             
+                }
+                
+                break;
+                
+            
+           
+         case 2: goto returngonder;
+         
+         break;
+         case 3:exit(0);   break;
+         
+         default:
+            
+            cout<<"Incorrect INPUT please enter your choice correctly ";
+            goto  returngonder ;
+            break;
+
+     }
+
+    
+
+
+
+}
+
+
+}
+
+
+void axumFun(){
+    
+
+}        
+
+
+
+void acceptinfo(){
+    
+ int num_res_people;
+
+    
+   cout<<endl<<"for how many peoples do you want reserve"<<endl<<endl;
+    
+    cin>>num_res_people;
+    
+    TouristsInfo Tourist_Info;
+    
+    for(int i=0;i<num_res_people;i++){
+
+    cout<<i+1<<" Full NAME : ";cin>>Tourist_Info.full_name[i];}
+    
+    cout<<"email address of the reserver:";
+    
+    cin>>Tourist_Info.email;
+    
+    cout<<"phone number of the reserver:";
+    
+    cin>>Tourist_Info.phone_num;
+    
+    cout<<"trip date(dd//mm//yy respectively):";
+    
+    cin>>Tourist_Info.trip_data.dd>>Tourist_Info.trip_data.mm>>Tourist_Info.trip_data.yy;
+  
+    
+    
+    
+}
